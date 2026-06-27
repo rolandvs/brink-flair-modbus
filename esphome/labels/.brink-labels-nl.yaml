@@ -15,6 +15,7 @@ substitutions:
   brink_external_co2_sensor4: CO2 sensor4
   brink_temp_to_outside: Buiten uitblaas temperatuur
   brink_humidity_to_outside: Buiten uitblaas luchtvochtigheid
+  brink_dewpoint_to_outside: Buiten dauwpunt
   brink_temp_from_outside: Buiten aanzuig temperatuur
   brink_supply_pressure: Druk inblaas
   brink_exhaust_pressure: Druk uitblaas

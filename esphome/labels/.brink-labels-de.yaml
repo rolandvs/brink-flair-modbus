@@ -15,6 +15,7 @@ substitutions:
   brink_external_co2_sensor4: CO2 Sensor4
   brink_temp_to_outside: Fortluft Temparatur
   brink_humidity_to_outside: Fortluft Luftfeuchtigkeit
+  brink_dewpoint_to_outside: Fortluft Taupunkt
   brink_temp_from_outside: Außenluft Temparatur
   brink_supply_pressure: Zuluft Druck
   brink_exhaust_pressure: Abluft Druck
