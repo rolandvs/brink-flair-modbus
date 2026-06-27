@@ -16,6 +16,8 @@ substitutions:
   brink_temp_to_outside: Fortluft Temperatur
   brink_humidity_to_outside: Fortluft Luftfeuchtigkeit
   brink_temp_from_outside: Außenluft Temperatur
+  brink_dewpoint_to_outside: Fortluft Taupunkt
+  brink_temp_from_outside: Außenluft Temparatur
   brink_supply_pressure: Zuluft Druck
   brink_exhaust_pressure: Abluft Druck
   brink_setpoint_inlet_volume: Eingestelltes Zuluft Volumen

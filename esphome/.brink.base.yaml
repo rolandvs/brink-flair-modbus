@@ -161,9 +161,20 @@ sensor:
     address: 4047
     device_class: humidity
     unit_of_measurement: "%"
-    value_type: U_WORD  
+    value_type: U_WORD
     accuracy_decimals: 0
     state_class: measurement
+
+  - id: brink_dewpoint_to_outside
+    name: ${brink_dewpoint_to_outside}
+    platform: template
+    lambda: |-
+        return (243.5*(log(id(brink_humidity_to_outside).state/100)+((17.67*id(brink_temp_to_outside).state)/
+        (243.5+id(brink_temp_to_outside).state)))/(17.67-log(id(brink_humidity_to_outside).state/100)-
+        ((17.67*id(brink_temp_to_outside).state)/(243.5+id(brink_temp_to_outside).state))));
+    unit_of_measurement: °C
+    update_interval: 15s
+    icon: 'mdi:thermometer-water'
 
   - id: brink_temp_from_outside  # NTC1
     name: ${brink_temp_from_outside}

@@ -15,6 +15,7 @@ substitutions:
   brink_external_co2_sensor4: CO2 sensor4
   brink_temp_to_outside: Temperature to outside
   brink_humidity_to_outside: Humidity to outside
+  brink_dewpoint_to_outside: Dewpoint to outside
   brink_temp_from_outside: Temperature from outside
   brink_supply_pressure: Supply pressure
   brink_exhaust_pressure: Exhaust pressure
