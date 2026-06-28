@@ -55,6 +55,11 @@ substitutions:
   brink_pressure_from_inside: Binnen aanzuig atm. druk
   brink_performance: Rendement
   brink_relay: Relais
+  brink_heater_mode: Heater modus
+  brink_heater_setpoint: Heater instelpunt
+  heater_none: Niet aanwezig
+  heater_pre: Voorverwarmer
+  heater_post: Naverwarmer
   auto: Auto
   initialize: Initialisatie
   unknown: Onbekend

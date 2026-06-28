@@ -1,0 +1,35 @@
+# Optional feature: external heater (pre- or post-heater)
+# Include this package only if your Brink Flair has a heater installed.
+# Register 6130 selects what is installed (none/pre/post),
+# register 6131 is the setpoint that applies when a heater is active.
+# Writing to 6131 while 6130 = 0 may be rejected by the device (Modbus exception 3).
+
+select:
+  - id: brink_heater_mode
+    name: ${brink_heater_mode}
+    platform: modbus_controller
+    modbus_controller_id: ${name}
+    address: 6130
+    value_type: S_WORD
+    skip_updates: 20
+    optionsmap:
+      ${heater_none}: 0
+      ${heater_pre}:  1
+      ${heater_post}: 2
+    icon: mdi:radiator
+
+number:
+  - id: brink_heater_setpoint
+    name: ${brink_heater_setpoint}
+    platform: modbus_controller
+    modbus_controller_id: ${name}
+    register_type: holding
+    address: 6131
+    value_type: S_WORD
+    min_value: 15
+    max_value: 30
+    step: 0.5
+    multiply: 10
+    unit_of_measurement: "°C"
+    mode: slider
+    icon: mdi:thermometer

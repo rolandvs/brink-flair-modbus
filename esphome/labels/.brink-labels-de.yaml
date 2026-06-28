@@ -55,6 +55,11 @@ substitutions:
   brink_pressure_from_inside: Abluft Druck
   brink_performance: Performance
   brink_relay: Relay
+  brink_heater_mode: Heizung Modus
+  brink_heater_setpoint: Heizung Solltemperatur
+  heater_none: Nicht verfügbar
+  heater_pre: Vorheizer
+  heater_post: Nachheizer
   auto: Auto
   initialize: Initialisieren...
   unknown: Unbekannt

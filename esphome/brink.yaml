@@ -55,6 +55,7 @@ packages:
       # esphome/sensors/sensor-brink_co2_2_sensor.yaml
       # esphome/sensors/sensor-brink_co2_3_sensor.yaml
       # esphome/sensors/sensor-brink_co2_4_sensor.yaml
+      # esphome/features/feature-postheater.yaml  # uncomment if a pre- or post-heater is installed
 
 # for developing/testing, uncomment local includes and comment out remote_package part.
 # packages:
